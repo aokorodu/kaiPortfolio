@@ -1,17 +1,18 @@
 <script>
+  import { base } from "$app/paths";
   let { children } = $props();
 </script>
 
 <div class="container">
   <div class="header">
     <div>
-      <a href="/"><h1>kai.okorodudu CMU</h1></a>
+      <a href="{base}/"><h1>kai.okorodudu CMU</h1></a>
     </div>
     <nav>
-      <a href="/about">about</a>
-      <a href="/motion-graphics">motion graphics</a>
-      <a href="/illustrations">illustrations</a>
-      <a href="/creative-coding">creative coding</a>
+      <a href="{base}/about">about</a>
+      <a href="{base}/motion-graphics">motion graphics</a>
+      <a href="{base}/illustrations">illustrations</a>
+      <a href="{base}/creative-coding">creative coding</a>
     </nav>
   </div>
   {@render children()}
