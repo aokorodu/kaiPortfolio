@@ -4,8 +4,8 @@ const dev = process.env.NODE_ENV === "development";
 
 export default {
   kit: {
+    appDir: "app",
     adapter: adapter({
-      appDir: "docs",
       pages: "docs",
       assets: "docs",
       fallback: undefined,
