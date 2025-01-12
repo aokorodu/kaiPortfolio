@@ -4,7 +4,6 @@ const dev = process.env.NODE_ENV === "development";
 
 export default {
   kit: {
-    paths: { relative: false },
     adapter: adapter({
       pages: "docs",
       assets: "docs",
@@ -13,7 +12,8 @@ export default {
       strict: true,
     }),
     paths: {
-      base: dev ? "" : "/kaiPortfolio/docs",
+      base: "/kaiPortfolio/docs",
+      relative: true,
     },
   },
 };
