@@ -5,7 +5,7 @@
 <div class="container">
   <div class="header">
     <div>
-      <a href="/"><h1>kai.okorodudu</h1></a>
+      <a href="/"><h1>kai.okoroduduz</h1></a>
     </div>
     <nav>
       <a href="/about">about</a>
