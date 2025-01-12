@@ -12,7 +12,7 @@ export default {
       strict: true,
     }),
     paths: {
-      base: "/kaiPortfolio/docs",
+      base: "/kaiPortfolio",
       relative: true,
     },
   },
