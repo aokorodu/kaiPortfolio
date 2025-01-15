@@ -1,0 +1,1 @@
+import{a as p,t}from"../chunks/disclose-version.Cp1o6_22.js";import"../chunks/legacy.Bj_jIXt5.js";import{n as a}from"../chunks/runtime.Ddzvn9_I.js";var r=t("<h1>code</h1> <p>code experiments in p5js</p>",1);function s(e){var o=r();a(2),p(e,o)}export{s as component};
