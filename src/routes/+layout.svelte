@@ -1,51 +1,36 @@
 <script>
-  import { base } from "$app/paths";
   let { children } = $props();
+  import { base } from "$app/paths";
 </script>
 
 <div class="container">
-  <div class="header">
-    <div>
-      <a href="{base}/"><h1>kai.okorodudu CMU</h1></a>
-    </div>
-    <nav>
-      <a href="{base}/about">about</a>
-      <a href="{base}/motion-graphics">motion graphics</a>
-      <a href="{base}/illustrations">illustrations</a>
-      <a href="{base}/creative-coding">creative coding</a>
-    </nav>
-  </div>
+  <nav>
+    <a class="nametag" href="{base}/">kai okorodudu</a>
+    <a href="{base}/contact">contact</a>
+    <a href="{base}/motion">motion</a>
+    <a href="{base}/code">code</a>
+    <a href="{base}/about">about</a>
+  </nav>
   {@render children()}
 </div>
 
 <style>
-  * {
-    font-family: "Roboto", sans-serif;
+  :global {
+    a {
+      color: black;
+      text-decoration: underline;
+      font-weight: 800;
+    }
   }
 
   .container {
+    font-family: "IBM Plex Mono", serif;
     max-width: 1000px;
     margin: 1rem auto;
     padding: 1rem;
   }
 
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-  }
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  a:hover {
-    text-decoration: underline;
+  .nametag {
+    font-size: 2rem;
   }
 </style>
